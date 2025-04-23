@@ -44,6 +44,58 @@
       color: #333;
       margin: 0;
       padding: 20px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      box-sizing: border-box;
+      font-size: 18px;
+    }
+    main {
+  text-align: center;
+}
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 330px;
+      padding: 20px 0;
+      background-color: #ffffff;
+      border-bottom: 2px solid #ccc;
+      text-align: center;
+    }
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .logo {
+      width: 80px;
+      height: auto;
+    }
+    .logo-text {
+      font-size: 40px;
+      font-weight: bold;
+      color: #005bff;
+    }
+    .school-address {
+      font-size: 18px;
+      font-weight: normal;
+    }
+    .contacts {
+      text-align: center;
+    }
+    .contacts p {
+      margin: 0;
+    }
+    .messengers {
+      margin-top: 5px;
+    }
+    .messengers img {
+      width: 24px;
+      height: 24px;
+      margin-left: 5px;
+      cursor: pointer;
     }
     h1 {
       text-align: center;
@@ -84,7 +136,6 @@
   white-space: nowrap;
   vertical-align: middle;
 }
-
 .schedule-table td.age {
   background-color: #f0f8ff;
   font-style: italic;
@@ -97,6 +148,12 @@
   font-size: 20px;
   margin-bottom: 5px;
   vertical-align: middle;
+}
+    .table-wrapper {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
     @media (max-width: 768px) {
   header {
@@ -157,7 +214,22 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPJGQP5J"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  <header>
+  <div class="logo-title">
+    <a href="School.html"> <img src="logo.png" alt="Логотип" class="logo" /></a>
+    <div><a  href="School.html" class="logo-text">Игровой формат</a></div>
+  </div>
+  <div class="school-address">г. Каспийск, ул. Школьная, 10</div>
+  <div class="contacts">
+    <p>+7 (929) 880-06-62</p>
+    <div class="messengers">
+      <a href="https://t.me/igrovoyformat_school" target="_blank"><img src="telegram.png" alt="Telegram" /></a>
+      <a href="https://wa.me/79991234567" target="_blank"><img src="whatsapp.webp" alt="WhatsApp" /></a>
+    </div>
+  </div>
+</header>
 <h1>Расписание занятий</h1>
+  <div class="table-wrapper">
   <table class="schedule-table">
     <tr>
       <th>День недели</th>
@@ -329,7 +401,7 @@
         <p>Спортивная биомеханика</p>
       </td>
     </tr>
-
   </table>
+  </div>
 </body>
 </html>
