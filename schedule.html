@@ -75,6 +75,24 @@
       font-weight: bold;
       color: #005bff;
     }
+    .schedule-table td.day {
+  background: linear-gradient(to right, #e0f0ff, #c0e0ff);
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.schedule-table td.age {
+  background-color: #f0f8ff;
+  font-style: italic;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.schedule-table .day-icon {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
     @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -145,8 +163,12 @@
 
     <!-- Понедельник -->
     <tr>
-      <td>Понедельник</td>
-      <td>13–15 лет</td>
+      <td class="day">
+  <span class="day-icon">📅</span>
+  Понедельник
+</td>
+
+<td class="age">13–15 лет</td>
       <td>
         <p>09:00 – 10:10</p>
         <p>10:25 – 11:35</p>
